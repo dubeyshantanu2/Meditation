@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}: any) => {
   return (
     <View>
-      <Text>LoginScreen</Text>
+      <Text onPress={() => navigation.navigate("Home")}>LoginScreen</Text>
     </View>
   )
 }
